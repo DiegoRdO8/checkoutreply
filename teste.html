@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcelamento</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .parcelas {
+            margin: 10px;
+        }
+
+        .parcelas label {
+            color: rgb(92, 84, 84);
+        }
+
+        .parcelas input {
+            opacity: 0.558;
+            width: 265px;
+            height: 30px;
+            position: relative;
+            top: 6px;
+        }
+
+        .dropdown-unique {
+            border: 1px solid #ccc;
+            background: white;
+            position: absolute;
+            z-index: 1000;
+            width: 265px; /* Alinhando com o input */
+        }
+
+        .option-unique {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .option-unique:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <section class="parcelas">
+        <label>Opções de parcelamento</label>
+        <br>
+        <input type="text" id="parcelar-input-unique" autocomplete="off">
+        <div id="parcelar-dropdown-unique" class="dropdown-unique" style="display: none;">
+            <div class="option-unique" data-value="12x 58,80">12x 58,80</div>
+            <div class="option-unique" data-value="11x 63,36">11x 63,36</div>
+            <div class="option-unique" data-value="10x 69,70">10x 69,70</div>
+            <div class="option-unique" data-value="9x 77,44">9x 77,44</div>
+            <div class="option-unique" data-value="8x 87,12">8x 87,12</div>
+            <div class="option-unique" data-value="7x 99,57">7x 99,57</div>
+            <div class="option-unique" data-value="6x 116,16">6x 116,16</div>
+            <div class="option-unique" data-value="5x 139,40">5x 139,40</div>
+            <div class="option-unique" data-value="4x 174,25">4x 174,25</div>
+            <div class="option-unique" data-value="3x 232,33">3x 232,33</div>
+            <div class="option-unique" data-value="2x 348,50">2x 348,50</div>
+            <div class="option-unique" data-value="1x 679,00">1x 679,00</div>
+        </div>
+    </section>
+    <section class="parcelas">
+        <label>Opções de parcelamento</label>
+        <br>
+        <input type="text" id="parcelar-input-unique" autocomplete="off">
+        <div id="parcelar-dropdown-unique" class="dropdown-unique" style="display: none;">
+            <div class="option-unique" data-value="12x 58,80">12x 58,80</div>
+            <div class="option-unique" data-value="11x 63,36">11x 63,36</div>
+            <div class="option-unique" data-value="10x 69,70">10x 69,70</div>
+            <div class="option-unique" data-value="9x 77,44">9x 77,44</div>
+            <div class="option-unique" data-value="8x 87,12">8x 87,12</div>
+            <div class="option-unique" data-value="7x 99,57">7x 99,57</div>
+            <div class="option-unique" data-value="6x 116,16">6x 116,16</div>
+            <div class="option-unique" data-value="5x 139,40">5x 139,40</div>
+            <div class="option-unique" data-value="4x 174,25">4x 174,25</div>
+            <div class="option-unique" data-value="3x 232,33">3x 232,33</div>
+            <div class="option-unique" data-value="2x 348,50">2x 348,50</div>
+            <div class="option-unique" data-value="1x 679,00">1x 679,00</div>
+        </div>
+    </section>
+    <section class="parcelas">
+        <label>Opções de parcelamento</label>
+        <br>
+        <input type="text" id="parcelar-input-unique" autocomplete="off">
+        <div id="parcelar-dropdown-unique" class="dropdown-unique" style="display: none;">
+            <div class="option-unique" data-value="12x 58,80">12x 58,80</div>
+            <div class="option-unique" data-value="11x 63,36">11x 63,36</div>
+            <div class="option-unique" data-value="10x 69,70">10x 69,70</div>
+            <div class="option-unique" data-value="9x 77,44">9x 77,44</div>
+            <div class="option-unique" data-value="8x 87,12">8x 87,12</div>
+            <div class="option-unique" data-value="7x 99,57">7x 99,57</div>
+            <div class="option-unique" data-value="6x 116,16">6x 116,16</div>
+            <div class="option-unique" data-value="5x 139,40">5x 139,40</div>
+            <div class="option-unique" data-value="4x 174,25">4x 174,25</div>
+            <div class="option-unique" data-value="3x 232,33">3x 232,33</div>
+            <div class="option-unique" data-value="2x 348,50">2x 348,50</div>
+            <div class="option-unique" data-value="1x 679,00">1x 679,00</div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            $('#parcelar-input-unique').on('focus', function () {
+                $('#parcelar-dropdown-unique').show();
+            });
+
+            $('#parcelar-input-unique').on('blur', function () {
+                setTimeout(function () {
+                    $('#parcelar-dropdown-unique').hide();
+                }, 100);
+            });
+
+            $('.option-unique').on('click', function () {
+                var value = $(this).data('value');
+                $('#parcelar-input-unique').val(value);
+                $('#parcelar-dropdown-unique').hide();
+            });
+
+            $('#parcelar-input-unique').on('input', function () {
+                var value = $(this).val().toLowerCase();
+                $('.option-unique').each(function () {
+                    var optionText = $(this).text().toLowerCase();
+                    $(this).toggle(optionText.indexOf(value) > -1);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

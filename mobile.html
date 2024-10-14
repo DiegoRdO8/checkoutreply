@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mobilestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="mobileap.js"></script>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <header>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="verificado">
+                <img src="img/comprasegura.png">
+            </div>
+        </header>
+    </div>
+    <div id="primeiraparte">
+        <div class="imgpart">
+        </div>
+        <div class="estrutura1">
+            <h1>Curso de Motion Graphics para produtores de vídeo</h1>
+            <h4>Aproveite e turbine seus estudos com:</h4>
+        </div>
+        <div class="produtosadicionais">
+            <div class="produto1">
+                <div class="exemploproduto"></div>
+                <h5>Curso de Motion Graphics</h5>
+                <div class="comprarjunto">
+                    <div class="porquanto">
+                        <p>compre junto por mais</p>
+                        <h4>R$12x 58,80</h4>
+                    </div>
+                </div>
+                <div class="carrinho">
+                    <p>Adicionar ao carrinho</p>
+                </div>
+                <div class="opcoesdeparcela">
+                    <input type="text" id="parcelar-input-unique" placeholder="R$12x 58,80">
+                    <div id="parcelar-dropdown-unique" class="dropdown-unique" style="display: none;">
+                        <div class="option-unique" data-value="12x 58,80">12x 58,80</div>
+                        <div class="option-unique" data-value="11x 63,36">11x 63,36</div>
+                        <div class="option-unique" data-value="10x 69,70">10x 69,70</div>
+                        <div class="option-unique" data-value="9x 77,44">9x 77,44</div>
+                        <div class="option-unique" data-value="8x 87,12">8x 87,12</div>
+                        <div class="option-unique" data-value="7x 99,57">7x 99,57</div>
+                        <div class="option-unique" data-value="6x 116,16">6x 116,16</div>
+                        <div class="option-unique" data-value="5x 139,40">5x 139,40</div>
+                        <div class="option-unique" data-value="4x 174,25">4x 174,25</div>
+                        <div class="option-unique" data-value="3x 232,33">3x 232,33</div>
+                        <div class="option-unique" data-value="2x 348,50">2x 348,50</div>
+                        <div class="option-unique" data-value="1x 679,00">1x 679,00</div>
+                    </div>
+                </div>
+                <div id="desejacupom">
+                    <a>Adicionar cupom de desconto?</a>
+                </div>
+                <div id="cupomdescont">
+                    <div>
+                        <input id="cupom" name="cupom" placeholder="Insira o código do seu cupom">
+                        <div id="aplicando">Aplicar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="segundaparte">
+        <div class="primeiroforms">
+            <div class="bolinha">
+                <h1>1</h1>
+            </div>
+            <div class="demonstra">
+                <p>Informações pessoais</p>
+            </div>
+            <form action="/en-US/docs/Web/HTML/Attributes/placeholder" method="POST" id="apply">
+                <section class="username">
+                    <label>Nome completo</label>
+                    <br>
+                    <input id="nome" name="nome" placeholder="   Digite seu nome">
+                </section>
+                <section class="useremail">
+                    <label>Seu e-mail</label>
+                    <br>
+                    <input id="email" name="email" placeholder="   Digite seu e-mail">
+                </section>
+                <section class="estrangeiro">
+                    <div id="casoestrangeiro">Venda internacional habilitado apenas para cartão de crédito internacional
+                        e habilitados
+                        para transações em Real(BRL).
+                    </div>
+                    <input type="checkbox" id="averiguar">
+                    <label>Sou estrangeira(o) e não tenho CPF OU CNPJ
+                        <span class="checkmark"></span>
+                    </label>
+                </section>
+                <section class="userdocument" id="documentos">
+                    <label>Documento (CPF/CNPJ)</label>
+                    <br>
+                    <input id="document" name="document" placeholder="   Digite seu documento">
+                </section>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                        <p>Brazil +55</p>
+                    </button>
+                </div>
+                <section class="userphone">
+                    <label></a>
+                        <input id="phone" name="phone">
+                </section>
+
+                <section class="usercep">
+                    <div class="codpostal">
+                        <label>Código postal (CEP)</label>
+                        <br>
+                        <input id="postal" name="postal" placeholder="   Digite seu CEP">
+                    </div>
+                    <div class="partedocep">
+                        <div class="userendereco">
+                            <label>Endereço</label>
+                            <br>
+                            <input id="endereco" name="endereco" placeholder="   Digite seu Endereço">
+                        </div>
+                        <div id="partedoendereco">
+                            <div class="userbairro">
+                                <label>Bairro</label>
+                                <br>
+                                <input id="bairro" name="bairro" placeholder="   Digite seu Bairro">
+                            </div>
+                            <div class="usercidade">
+                                <label>Cidade</label>
+                                <br>
+                                <input id="cidade" name="cidade" placeholder="   Digite sua Cidade">
+                            </div>
+                            <div class="userestado">
+                                <label>Estado</label>
+                                <br>
+                                <input id="estado" name="estado">
+                            </div>
+                            <div class="]usercasanum">
+                                <label>Número</label>
+                                <br>
+                                <input id="numcasa" name="numcasa" placeholder="   Digite o número da casa">
+                            </div>
+                            <div class="usercomplemento">
+                                <label>Complemento</label>
+                                <br>
+                                <input id="complemento" name="complemento" placeholder="   Digite">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="faturamento">
+                    <input type="checkbox" id="faturar">
+                    <label>Adicionar dados de faturamento de um terceiro
+                        <span class="checkmark"></span>
+                    </label>
+                </section>
+                <div class="copiandoterceiros">
+                    <section class="username">
+                        <label>Nome completo</label>
+                        <br>
+                        <input id="nome" name="nome" placeholder="   Digite seu nome">
+                    </section>
+                    <section class="useremailcopia">
+                        <label>Seu e-mail</label>
+                        <br>
+                        <input id="email" name="email" placeholder="   Digite seu e-mail">
+                    </section>
+                    <div class="dropdowncopia">
+                        <button onclick="myFunction()" class="dropbtncopia">
+                            <p>Brazil +55</p>
+                        </button>
+                    </div>
+                    <section class="userphone">
+                        <label></a>
+                            <input id="phone" name="phone">
+                    </section>
+                    <section class="usercepcopia">
+                        <div class="codpostal">
+                            <label>Código postal (CEP)</label>
+                            <br>
+                            <input id="postal" name="postal" placeholder="   Digite seu CEP">
+                        </div>
+                        <div class="partedocep">
+                            <div class="userendereco">
+                                <label>Endereço</label>
+                                <br>
+                                <input id="endereco" name="endereco" placeholder="   Digite seu Endereço">
+                            </div>
+                        </div>
+                </div>
+                </forms>
+            </form>
+        </div>
+    </div>
+    <div class="terceiraparte">
+        <div class="segundoforms">
+            <div class="bolinhasecond">
+                <h1>2</h1>
+            </div>
+            <div class="demonstrasecond">
+                <p>Metodo de pagamento</p>
+            </div>
+            <form action="/en-US/docs/Web/HTML/Attributes/placeholder" method="POST" id="applycartao">
+                <section id="pagarcartao">
+                    <p>Cartão de crédito</p>
+                </section>
+                <section id="pagarpix">
+                    <p>pix</p>
+                </section>
+                <section id="pagarboleto">
+                    <p>Boleto bancário</p>
+                </section>
+                <div class="sobrecartao">
+                    <section class="usercartao">
+                        <label>Número do cartão</label>
+                        <br>
+                        <input id="cartao" name="cartao" placeholder="   Digite o número do cartão">
+                    </section>
+                    <div class="nalinha">
+                        <section class="uservencimento">
+                            <label>Data de vencimento</label>
+                            <br>
+                            <input id="vencimento" name="vencimento" placeholder="   Mês">
+                        </section>
+                        <div class="movendonalinha">
+                            <section class="uservencimentoano">
+                                <br>
+                                <input id="vencimentoano" name="vencimentoano" placeholder="   Ano">
+                            </section>
+                        </div>
+                        <div class="movendonalinhadois">
+                            <section class="userseguranca">
+                                <label>CVV</label>
+                                <br>
+                                <input id="seguranca" name="seguranca" placeholder="   3 digitos">
+                            </section>
+                        </div>
+                    </div>
+                    <section class="usercartaonome">
+                        <label>Digite seu nome</label>
+                        <p>(como está no cartão)</p>
+                        <br>
+                        <input id="cartaonome" name="cartaonome" placeholder="   Digite o número do cartão">
+                    </section>
+                    <section class="opcoes-parcelamento">
+                        <label>Selecione o Parcelamento</label>
+                        <br>
+                        <input type="text" id="input-parcelamento" autocomplete="off">
+                        <div id="dropdown-parcelamento" class="dropdown-opcoes" style="display: none;">
+                            <div class="opcao-parcelamento" data-value="12x 58,80">12x 58,80</div>
+                            <div class="opcao-parcelamento" data-value="11x 63,36">11x 63,36</div>
+                            <div class="opcao-parcelamento" data-value="10x 69,70">10x 69,70</div>
+                            <div class="opcao-parcelamento" data-value="9x 77,44">9x 77,44</div>
+                            <div class="opcao-parcelamento" data-value="8x 87,12">8x 87,12</div>
+                            <div class="opcao-parcelamento" data-value="7x 99,57">7x 99,57</div>
+                            <div class="opcao-parcelamento" data-value="6x 116,16">6x 116,16</div>
+                            <div class="opcao-parcelamento" data-value="5x 139,40">5x 139,40</div>
+                            <div class="opcao-parcelamento" data-value="4x 174,25">4x 174,25</div>
+                            <div class="opcao-parcelamento" data-value="3x 232,33">3x 232,33</div>
+                            <div class="opcao-parcelamento" data-value="2x 348,50">2x 348,50</div>
+                            <div class="opcao-parcelamento" data-value="1x 679,00">1x 679,00</div>
+                        </div>
+                    </section>
+                </div>
+                <div id="casodepix">
+                    <div class="levamate">
+                        <p>Pagamentos com Pix levam até 10 segundos para serem compensados e ter o produto liberado</p>
+                    </div>
+                    <div class="podepagar">
+                        <p>Você pode pagar com a chave PIX no aplicativo do seu banco até o dia do vencimento</p>
+                    </div>
+                    <div class="lembrar">
+                        <p>Lembre-se de verificar a confirmação do pedido para receber nossa notificação de liberação de
+                            acesso
+                            ao curso (verifique também a caixa de SPAM)
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="emlinha">
+            <p>R$12x </p>
+            <h1>58,80</h1>
+            <p>no cartão</p>
+            <div class="comprando">
+                <h3>comprar</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

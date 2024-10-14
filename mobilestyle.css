@@ -1,0 +1,872 @@
+style.css * {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid purple;*/
+}
+
+body {
+    background-color: rgb(218, 221, 220);
+}
+
+.cabecalho {
+    height: 60px;
+    flex-shrink: 0;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    color: #E9504E;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 70px;
+    letter-spacing: -2px;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+    width: 50px;
+}
+
+.verificado img {
+    width: 110px;
+    height: 54px;
+    flex-shrink: 0;
+   position: absolute;
+   top: 5px;
+   right: 10px;
+}
+
+.imgpart {
+    width: 297.145px;
+    height: 152px;
+    flex-shrink: 0;
+    margin: 0px 11px 0px 11px;
+    border-radius: 6px 6px 0px 0px;
+    background: url("img/resumocompra.png") rgb(255, 255, 255) 50% / cover no-repeat;
+}
+
+#primeiraparte {
+    display: flex;
+    margin: 21px 11px 75px 11px;
+    padding: 0px 16px 16px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
+    height: 520px;
+    font-family: Lato;
+}
+
+.estrutura1 h1 {
+    color: rgb(53, 53, 54);
+    font-size: 1.217em;
+    margin: 0px 0px 10px 0px;
+    font-family: Lato;
+}
+
+.estrutura1 h4 {
+    color: rgb(53, 53, 54);
+    font-size: 1.100em;
+    font-family: Lato;
+
+}
+
+.produto1 h5 {
+    align-self: stretch;
+    color: #505050;
+    font-family: Lato;
+    font-size: 1.000em !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    width: 145px;
+    position: relative;
+    left: 147px;
+    bottom: 107px;
+}
+
+.produtosadicionais {
+    height: 150px;
+    width: 270px;
+    border: 5px dashed red;
+    margin: 0 45px;
+}
+
+.exemploproduto {
+    width: 131px;
+    height: 92px;
+    flex-shrink: 0;
+    background-color: rgb(168, 162, 162);
+    margin: 10px 10px;
+}
+
+.produtosadicionais h5 {
+    font-size: 0.870em;
+    color: rgb(56, 55, 55);
+    font-family: Lato;
+}
+
+.porquanto p {
+    font-size: 0.700em !important;
+    color: rgb(150, 146, 146) !important;
+    position: relative;
+    left: 150px;
+    bottom: 85px;
+    width: 120px;
+    font-family: Lato;
+}
+
+.porquanto h4 {
+    font-size: 1.200em !important;
+    color: rgb(255, 0, 0) !important;
+    position: relative;
+    left: 150px;
+    bottom: 85px;
+    width: 120px;
+    font-family: Lato;
+}
+
+.carrinho {
+    background-color: rgb(131, 131, 131);
+    border-radius: 5px;
+    width: 155px;
+    height: 25px;
+    text-align: center;
+    z-index: 0;
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+}
+
+.carrinho p {
+    font-size: 0.900em !important;
+}
+
+.opcoesdeparcela {
+    position: relative;
+    left: 180px;
+    bottom: 102px;
+    width: 100px;
+}
+
+.opcoesdeparcela input {
+    width: 70px;
+}
+
+
+.dropdown-unique {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+
+    z-index: 1;
+}
+
+.option-unique {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.option-unique:hover {
+    background-color: #f0f0f0;
+}
+
+#desejacupom a {
+    color: red;
+    position: relative;
+    bottom: 60px;
+}
+
+#cupomdescont>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 45px;
+}
+
+#cupomdescont input {
+    opacity: 0.558;
+    width: 530px !important;
+    height: 25px;
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+}
+
+#aplicando {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid rgb(146, 146, 146);
+    cursor: pointer;
+    position: relative;
+    bottom: 47px;
+    right: 20px;
+}
+
+#aplicando p {
+    position: relative;
+    left: 12px;
+    bottom: 15px;
+    color: rgb(53, 53, 54);
+    font-size: 1.100em !important;
+    font-family: Lato;
+}
+
+#cupomdescont ::-webkit-input-placeholder {
+    color: rgb(36, 34, 34);
+}
+
+#cupomdescont {
+    display: none;
+}
+
+#cupomdescont.show {
+    display: block;
+}
+
+.segundaparte {
+    display: flex;
+    margin: 21px 11px 11px 11px;
+    padding: 0px 16px 16px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
+    margin: 21px 11px 61px 11px;
+    font-family: Lato;
+}
+
+/*preparando todo o forms*/
+
+.segundaparte .demonstra {
+    background-color: rgb(165, 55, 55);
+    border-radius: 150px;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top: 680px;
+    left: 27px;
+    font-family: Lato;
+}
+
+ .demonstra p {
+    font-size: 1.085em;
+    color: white;
+    font-family: Lato;
+    position: relative;
+    left: 10px;
+}
+
+.segundaparte .bolinha {
+    background-color: rgb(163, 25, 25);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 670px;
+    left: 5px;
+}
+
+.bolinha h1 {
+    color: white;
+    font-family: Lato;
+}
+
+.primeiroforms {
+    width: 295px;
+    background-color: rgb(255, 255, 255);
+    font-family: Lato;
+}
+
+.primeiroforms .username {
+    margin: 25px 10px 10px 10px;
+}
+
+.username label {
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+    
+}
+
+.username input {
+    opacity: 0.558;
+    width: 255px;
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+}
+
+.primeiroforms .useremail {
+    margin: 70px 10px 10px 10px;
+}
+
+.useremail label {
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+}
+
+.useremail input {
+    opacity: 0.558;
+    height: 30px;
+    width: 255px;
+}
+
+.estrangeiro {
+    margin: 10px 10px 10px 10px;
+    font-family: Lato;
+}
+
+.estrangeiro input {
+    cursor: pointer;
+}
+
+.estrangeiro label {
+    font-size: 1em;
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+}
+
+#casoestrangeiro {
+    top: 25px;
+    background-color: rgb(100, 100, 201);
+    width: 200px;
+    margin: 10px 10px 10px 0px;
+    font-family: Lato;
+}
+
+.primeiroforms .userdocument {
+    margin: 10px 10px 10px 10px;
+}
+
+.userdocument label {
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+}
+
+.userdocument input {
+    opacity: 0.558;
+    width: 255px;
+    height: 30px;
+}
+
+.userphone {
+   margin: -39px 10px 20px 70px;
+}
+
+.userphone input {
+    width: 195px;
+    height: 30px;
+}
+
+.dropbtn {
+    position: relative;
+    left: 10px;
+    flex-shrink: 0;
+    background-color: rgb(128, 126, 126);
+    color: white;
+    padding: 16px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 35px;
+}
+
+.dropbtncopia {
+    position: relative;
+    left: 10px;
+    flex-shrink: 0;
+    background-color: rgb(128, 126, 126);
+    color: white;
+    padding: 16px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 35px;
+}
+
+
+.dropdown {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown p {
+    position: relative;
+    bottom: 7px;
+}
+
+.primeiroforms .usercep {
+    margin: 10px 10px 10px 10px;
+}
+
+.usercep label {
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+}
+
+.usercep input {
+    opacity: 0.558;
+    width: 255px;
+    height: 30px;
+}
+
+.userendereco{
+    margin: 10px 10px 10px 0px;
+}
+
+.usercidade{
+    margin: 10px 10px 10px 0px;
+}
+
+.usercidade input{
+    width: 150px;
+}
+
+.userestado{
+    margin: 0px 10px 10px 160px;
+    position: absolute;
+    top: 1201px;
+}
+
+.userestado input{
+    width: 100px;
+}
+
+.usercomplemento{
+    margin: 10px 10px 10px 0px;
+}
+
+.faturamento {
+    margin: 10px 10px 10px 10px;
+}
+
+.faturamento input {
+    cursor: pointer;
+}
+
+.faturamento label {
+    font-size: 1em;
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+}
+
+.primeiroforms .useremailcopia {
+    margin: 10px 10px 10px 10px;
+}
+
+.useremailcopia label {
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+}
+
+.useremailcopia input {
+    opacity: 0.558;
+    height: 30px;
+    width: 255px;
+}
+
+.dropdowncopia p {
+    position: relative;
+    bottom: 7px;
+}
+
+.usercepcopia {
+    margin: 20px 10px 30px 10px;
+}
+
+.usercepcopia label {
+    color: rgb(92, 84, 84);
+    font-family: Lato;
+}
+
+.usercepcopia input {
+    opacity: 0.558;
+    width: 255px;
+    height: 30px;
+}
+
+.terceiraparte{
+    display: flex;
+    margin: 21px 11px 71px 11px;
+    padding: 0px 16px 16px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
+    font-family: Lato;
+}
+
+.terceiraparte .demonstrasecond {
+    background-color: rgb(165, 55, 55);
+    border-radius: 150px;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top: 1310px;
+    left: 25px;
+}
+
+
+.terceiraparte .bolinhasecond {
+    background-color: rgb(163, 25, 25);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 1300px;
+    left: 1px;
+    
+}
+
+.demonstrasecond p {
+    font-size: 1.085em;
+    color: white;
+    position: relative;
+    left: 10px;
+}
+
+.bolinhasecond h1{
+    color: white;
+}
+
+.segundoforms {
+    width: 295px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#pagarcartao {
+    width: 110px;
+    height: 30px;
+    border: 1px solid rgb(146, 146, 146);
+    cursor: pointer;
+    margin: 30px 10px 10px 10px;
+}
+
+#pagarcartao p {
+    text-align: center;
+    position: relative;
+    top: 6px;
+    color: rgb(53, 53, 54);
+    font-size: 0.790em;
+}
+
+#pagarpix {
+    width: 50px;
+    height: 30px;
+    border: 1px solid rgb(146, 146, 146);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    margin: -42px 10px 10px 130px;
+}
+
+#pagarpix p {
+    color: rgb(53, 53, 54);
+    font-size: 0.790em;
+    position: relative;
+    top: 8px;
+}
+
+#pagarboleto {
+    width: 90px;
+    height: 30px;
+    border: 1px solid rgb(146, 146, 146);
+    cursor: pointer;
+    text-align: center;
+    margin: -42px 10px 10px 190px;
+}
+
+#pagarboleto p {
+    color: rgb(53, 53, 54);
+    font-size: 0.790em;
+    position: relative;
+    top: 8px;
+}
+
+.usercartao {
+    margin: 10px 10px 10px 10px;
+}
+
+.usercartao label {
+    color: rgb(92, 84, 84);
+
+}
+
+.usercartao input {
+    opacity: 0.558;
+    width: 265px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+}
+
+
+.uservencimento label {
+    color: rgb(92, 84, 84);
+
+}
+
+.uservencimento input {
+    opacity: 0.558;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; 
+}
+
+.nalinha {
+    display: flex;
+    gap: 8px;
+    padding: 0px 0px 0px 10px;
+}
+
+.movendonalinha{
+    margin: 18px 20px 0px 0px;
+}
+
+.movendonalinhadois{
+    margin: 18px 0px 0px 0px;
+}
+
+.uservencimentoano input {
+    opacity: 0.558;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+}
+
+.userseguranca {
+    position: relative;
+    right: 10px;
+}
+
+.userseguranca label {
+    color: rgb(92, 84, 84);
+
+}
+
+.userseguranca input {
+    opacity: 0.558;
+    width: 85px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+}
+
+.usercartaonome {
+   margin: 10px;
+}
+
+.usercartaonome label {
+    color: rgb(92, 84, 84);
+
+}
+
+.usercartaonome input {
+    opacity: 0.558;
+    width: 265px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+}
+
+.segundoforms .usercartaonome p {
+    font-size: 0.800em;
+    opacity: 0.558;
+    margin: -15px 10px -10px 110px;
+    color: rgb(92, 84, 84);
+}
+
+.opcoes-parcelamento {
+    margin: 10px;
+}
+
+.opcoes-parcelamento label {
+    color: rgb(92, 84, 84);
+}
+
+.opcoes-parcelamento input {
+    opacity: 0.558;
+    width: 265px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+}
+
+.dropdown-opcoes {
+    border: 1px solid #ccc;
+    background: white;
+    position: absolute;
+    z-index: 1000;
+    width: 265px; /* Alinhando com o input */
+}
+
+.opcao-parcelamento {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.opcao-parcelamento:hover {
+    background-color: #f0f0f0;
+}
+
+
+.levamate {
+    margin: 10px 30px 0px 10px;
+    width: 270px;
+    height: 100px;
+    border: 1px solid rgb(146, 146, 146);
+}
+
+#casodepix .levamate p {
+    color: rgb(53, 53, 54);
+    font-size: 0.700em;
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.podepagar {
+    margin: 10px 30px 0px 10px;
+    width: 270px;
+    height: 100px;
+    border: 1px solid rgb(146, 146, 146);
+}
+
+#casodepix .podepagar p {
+    color: rgb(53, 53, 54);
+    font-size: 0.700em;
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.lembrar {
+    margin: 10px 30px 0px 10px;
+    width: 270px;
+    height: 100px;
+    border: 1px solid rgb(146, 146, 146);
+    
+}
+
+#casodepix .lembrar p {
+    color: rgb(53, 53, 54);
+    font-size: 0.700em;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.footer{
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+}
+
+.footer h1{
+    font-size: 1.200em;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    color: #505050;
+}
+
+.footer p{
+    font-size: 0.600em;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    color: #505050;
+}
+
+
+.emlinha {
+    display: flex;
+    position: relative;
+    top: 20px;
+}
+
+.emlinha p{
+    position: relative;
+    top: px;
+}
+
+.comprando{
+    border-radius: 200px;
+    width: 110px;
+    height: 30px;
+    background-color: #505050;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+.comprando h3{
+    font-size: 0.850em;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    top: 7px;
+    left: 18px;
+}
